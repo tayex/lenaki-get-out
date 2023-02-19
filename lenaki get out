@@ -808,7 +808,7 @@ title_string = os.date(title_string, os.time())..day..GetSubPrefix(day)..os.date
             end)
             --
             spawn(function()
-                while wait(0.1) do
+                 do
                     watermark_title.Text = string.format("devine | Da Hood | Buyer | Ping : " .. tostring(library.shared.ping) .. "ms | FPS : " .. tostring(library.shared.fps), window.name)
                     window.watermark:UpdateSize()
                 end
@@ -934,7 +934,7 @@ title_string = os.date(title_string, os.time())..day..GetSubPrefix(day)..os.date
                     utility:Lerp(notify_title, {Transparency = 0}, 0.25)
                     utility:Lerp(notify__gradient, {Transparency = 0}, 0.25)
                     --
-                    task.wait(0.25)
+                    
                     --
                     notify_outline:Remove()
                     notify_inline:Remove()
